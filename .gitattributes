@@ -1,0 +1,2 @@
+# Code runs in Linux containers/agents: keep LF endings even when edited on Windows
+* text=auto eol=lf

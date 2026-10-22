@@ -1,0 +1,25 @@
+# Secrets: keep only .env.example in Git
+.env
+.env.*
+!.env.example
+
+# Dependencies (rebuilt by npm ci / go mod download)
+node_modules/
+
+# Build output
+.next/
+backend/backend
+backend/*.exe
+
+# Terraform: state holds secrets in plain text
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
